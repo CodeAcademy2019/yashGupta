@@ -1,3 +1,3 @@
-module.exports =  function exclaimation(String, t=String.length)  {
+module.exports =   exclaimation = (String, t=String.length) => {
     return String + "!".repeat(t);
 };
