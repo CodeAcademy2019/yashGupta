@@ -1,4 +1,5 @@
 var average= (...args) => {
+    //console.log(args)
     var result=0;
     args.forEach(function(value){
         result+=value;

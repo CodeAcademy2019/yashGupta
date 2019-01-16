@@ -9,5 +9,5 @@ test (`The function "exclaimation" should return string followed by exclaimation
 })
 
 test (`The function "exclaimation" should return string followed by exclaimation marks equal to the length of the string if not specified`, ()=> {
-    expect (exclaimation("Hii", 3)).toEqual("Hii!!!")
+    expect (exclaimation("Hii", null)).toEqual("Hii!!!")
 })

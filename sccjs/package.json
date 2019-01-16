@@ -1,0 +1,11 @@
+{
+  "name": "sccjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-program.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
