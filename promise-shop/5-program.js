@@ -6,3 +6,5 @@ promise.then((success) =>{
     console.log(success);
 });
 console.log("MAIN PROGRAM");
+
+module.exports={promise}
