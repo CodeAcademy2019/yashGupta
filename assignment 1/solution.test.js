@@ -29,6 +29,13 @@ describe('roll', () => {
     expect(bowl.roll([4, 6, 4, 6, 4, 6, 4, 6, 4, 6, 4, 6, 4, 6, 4, 6, 4, 6, 4, 6, 10])).toEqual(146);
   });
 
+  it('should consider game ending with spare.' , () => {
+    expect (bowl.roll([6, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 4, 10])).toEqual(36)
+  });
+
+  it ('should consider game ending with strike.' , () => {
+    expect (bowl.roll([6, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 9, 10])).toEqual(45)
+  });
   // xit ('should return ')
 });
 
@@ -36,7 +43,9 @@ describe('score', () => {
   it('should return the total score of the game', () => {
     expect(bowl.score([6, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])).toEqual(16);
   });
+
   it('should return "Game Quit" if enough inputs are not provided', () => {
     expect(bowl.score([1, 2])).toEqual('Game Quit.');
   });
+
 });

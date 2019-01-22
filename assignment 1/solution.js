@@ -34,6 +34,5 @@ const roll = (array) => {
 
   return (total);
 };
-
 const score = array => roll(array);
 module.exports = { roll, score };
