@@ -13,7 +13,7 @@ describe('roll', () => {
     expect(bowl.roll([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])).toEqual(0);
   });
 
-  it('should return', () => {
+  it('should return not consider it as a strike if 10 pins are down in second throw', () => {
     expect(bowl.roll([0, 0, 0, 0, 0, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])).toEqual(30);
   });
 
